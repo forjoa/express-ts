@@ -4,13 +4,9 @@ const port = 8000;
 const app: Express = express();
 
 app.get("/", (req: Request, res: Response) => {
-    res.send("HELLO FROM EXPRESS + TS!!!!");
-});
-
-app.get("/hi", (req: Request, res: Response) => {
-    res.send("BYEEE!!");
+    res.send("Welcome to Express + TypeScript Server");
 });
 
 app.listen(port, () => {
-    console.log(`now listening on port ${port}`);
+    console.log(`Now listening on port ${port}`);
 });
